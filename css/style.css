@@ -1,0 +1,89 @@
+html, body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+canvas{
+    display: block;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.left-content, .right-content{
+    display: inline-block;
+}
+
+.left-content{
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 50px 20px;
+    padding-top: 20px;
+    background-color: #247BA0;
+    color: white;
+}
+
+.detail-info{
+    margin-top: 25px;
+	font-size: 0.8em;
+}
+
+.detail-info>table{
+    margin: 0 auto;
+}
+
+td{
+    padding: 1px 3px;
+}
+
+.result{
+    margin-top: 25px;
+    font-weight: bold;
+	font-size: 0.8em;
+}
+
+.notes{
+    margin-top: 25px;
+    font-size: 13px;
+    bottom: 0;
+}
+
+.right-content{
+    width: 80%;
+    height: 100%;
+}
+
+input[type=number]{
+    text-align: center;
+    width: 60%;
+    margin: 8px 0;
+    box-sizing: border-box;
+    padding: 3px 0;
+    border: none;
+    border-radius: 4px;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.button {
+    background-color: #70C1B3; /* Green */
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+}

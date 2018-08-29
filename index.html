@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>TSP Generator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left-content">
+            <div class="left-title">
+                <h2>TSP Generator</h2>
+            </div>
+            <div class="form-content">
+                <form onsubmit="setCount()">
+                    Node Count
+                    <br>
+                    <input id="node-count" type="number" value="10" min="3" max="15">
+                    <br>
+                    <input class="button" type="submit" value="Generate">
+                </form>
+            </div>
+            <div id="detail" class="detail-info">
+            </div>
+            <div class="result" id="result">
+            </div>
+            <div class="notes">
+                TSP solution generated using Dynamic Programming method, be careful with your action!
+            </div>
+        </div>
+        <div id="canvas-parent" class="right-content">
+            <canvas class="content" id="newCanvas">
+                Your browser does not support HTML5 canvas, please use another browser or update your browser.
+            </canvas>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
